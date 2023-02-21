@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <title>Test de Codigo en HTML</title>
+</head>
+<body>
+    
+    <div id="huperTeiner">
+        <form action="submit">
+            <h3>Nombre Completo</h3>
+            <input type="text" id="nom" placeholder="Pipe" required-pattern="[a-zA-Z]"+ minlength="4"+ maxlenght="16">
+            <h3>Contrasena</h3>
+            <input type="password" id="pas" placeholder="123Achu" required-pattern="[0-9][a-zA-Z]"+ minlength="4"+ maxlenght="16">
+            <h3>Sexo</h3>
+            
+            <div style="text-align: center;" >
+            <ul style="list-style-type: none;">
+                <li>
+                    <label class="container">Masculino
+                        <input type="radio" name="form1">
+                        <span class="checkmark"></span>
+                </li>
+                <li>
+                    <label class="container">Femenino
+                    <input type="radio" name="form1">
+                    <span class="checkmark"></span>
+                </li>
+                <li>
+                    <label class="container">Otro
+                    <input type="radio" name="form1">
+                    <span class="checkmark"></span>
+                </li>
+            </ul>
+            </div>
+            
+                <h3>Fecha de nacimiento</h3>
+                <input type="date">
+
+                <h3>Color Favorito</h3>
+                <label><input type="color" id="colorBox"></label>
+                <br>
+                <br>
+                <input type="submit" id="submit">
+            </form>
+    </div>
+
+
+
+</body>
+</html>

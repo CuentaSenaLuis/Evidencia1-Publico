@@ -1,0 +1,87 @@
+#huperTeiner{
+    background-color: transparent;
+    text-align: center;
+    border: 5px black solid;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-right: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+
+.checkmark {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 43.8%;
+    height: 25px;
+    width: 150px;
+    background-color: #eee;
+
+}
+  
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.container input:checked ~ .checkmark {
+    background-color: rgb(133, 255, 170);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgb(255, 255, 255);
+}
+
+
+input:invalid{
+    background-color: rgb(255, 133, 133);
+}
+
+input:valid{
+    background-color: rgb(133, 255, 170);
+}
+
+
+#colorBox{
+    background-color: white;
+    border-color: white;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
